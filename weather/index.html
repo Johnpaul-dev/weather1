@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Weather</title>
+
+</head>
+<body>
+    <header>
+        <div id="location-section">
+            <span id="location-name">Portharcourt</span>
+            <img src="https://img.icons8.com/clouds/60/000000/user-location.png"/>
+        </div>
+    </header>
+
+    <section class="weather-section">
+        <div class="flex">
+            <div class="weather">
+                <div class="weather-text">
+                    <span id="date">Today, 12 Jan</span>
+                    <img id="weather-icon"/>
+                </div>
+                <h1 id="description">sunny</h1>
+                <p id="border"></p>
+
+                <div class="weather-description">
+                    <div id="description-title">air pressure</div>
+                    <p id="air-pressure">--</p>
+                    <div id="description-title">wind speed</div>
+                    <p id="wind">--</p>
+                    <div id="description-title">humidity</div>
+                    <p id="humidity">--</p>
+                </div>
+            </div>
+            <div class="temperature">
+                <p id="temperature-title">Temperature</p>
+                <div id="temperature-text"> <span id="temperature-degree">26</span><sup>o</sup><span>c</span> </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
