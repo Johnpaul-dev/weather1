@@ -45,7 +45,7 @@ const getLocation = () => {
 //if successful get weather data
 const onSuccess = (position) => {
     latitude = position.coords.latitude;
-    longitude = position.coords.latitude;
+    longitude = position.coords.longitude;
     weather()
     weatherLocation()
 }
