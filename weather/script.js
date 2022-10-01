@@ -33,7 +33,7 @@ const weather = () => {
 } 
 
 const weatherLocation = () => {
-    fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=f24baf01aff33594366c6279cff93512
+    fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=f24baf01aff33594366c6279cff93512
     `)
     .then(res => res.json())
     .then(data => locationName.innerText = data[0].name)
@@ -45,13 +45,14 @@ const getLocation = () => {
 //if successful get weather data
 const onSuccess = (position) => {
     latitude = position.coords.latitude;
-    longitude = position.coords.latitude;
+    longitude = position.coords.longitude;
     weather()
     weatherLocation()
 }
 
 const onError = () => {
-    console.log("error");
+    alert(" Please turn on Location and allow access ");
+    location.reload()
 }
 
 //userlocation
